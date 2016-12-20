@@ -1,0 +1,404 @@
+
+
+*,
+*:before,
+*:after{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*----------------------------------
+GRID
+----------------------------------*/
+
+.all-content{
+	width: 100vw;
+	height: 100vh;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: inline-block;
+}
+
+.squares {
+	opacity: 0;
+}
+
+.grid.visible .squares {
+	opacity: 1;
+}
+
+.squares > li.hidden{
+	opacity: 0.2;
+}
+
+
+.sq {
+	float: left;
+	width: 100vh;
+	height: 100vw;
+}
+
+
+.sq1 {
+	
+	background: #06465b;
+}
+
+.sq2 {
+
+	background: #7ABCC7;
+}
+
+.sq3 {
+
+	background: #CED767;
+}
+
+.sq4 {
+
+	background: #F7ED94;
+}
+
+.sq5 {
+
+	background: #EB818D;
+}
+
+.sq6 {
+
+	background: #F4AA6C;
+}
+
+.sq7 {
+	
+	background: #5ABBB4;
+}
+
+.sq8 {
+	
+	background: #FFC7C9;
+}
+
+.sq9 {
+	
+	background: #06465b;
+}
+
+/*------------------------------
+This repetitive pattern of sq:hover might look obnoxious, but it is there because this is
+a prototype of my portfolio. When I apply different projects with different images. They will all have
+to be tweaked individually.
+------------------------------*/
+.sq:hover h1,
+.sq:hover h2{
+	opacity: 1;
+}
+
+.sq1:hover {
+	background-size: auto 100%;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url("../img/artificialwaves.jpg");
+}
+
+.sq2:hover {
+	background-size: auto 100%;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url("../img/artificialwaves.jpg");
+}
+
+.sq3:hover {
+	background-size: auto 100%;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url("../img/artificialwaves.jpg");
+}
+
+.sq4:hover {
+	background-size: auto 100%;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url("../img/artificialwaves.jpg");
+}
+
+.sq5:hover {
+	background-size: auto 100%;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url("../img/artificialwaves.jpg");
+}
+
+.sq6:hover {
+	background-size: auto 100%;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url("../img/artificialwaves.jpg");
+}
+
+.sq7:hover {
+	background-size: auto 100%;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url("../img/artificialwaves.jpg");}
+
+.sq8:hover {
+	background-size: auto 100%;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url("../img/artificialwaves.jpg");
+}
+
+.sq9:hover {
+	background-size: auto 100%;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url("../img/artificialwaves.jpg");
+}
+
+/*----------------------------------
+TYPOGRAPHY
+----------------------------------*/
+.type {
+	font-family: "Courier New", Courier, Arial;
+	color: #FFF;
+	text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+
+h1 {
+	font-size: 18px;
+	font-weight: 500;
+	padding-top: 30%;
+	padding-left: 15%;
+}
+
+h1,
+h2 {
+	opacity: 0;
+}	
+
+h2 {
+	padding-top: 1%;
+	padding-left: 15%;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+h3 {
+	padding: 0 5%;
+	font-size: 18px;
+	font-weight: 500;
+	text-shadow: none;
+}
+
+h4{
+	padding: 0 5%;
+	font-size: 12px;
+	font-weight: 500;
+	text-shadow: none;
+	
+}
+	
+
+
+/*---------------------------
+	Single Project Page
+----------------------------*/
+.single-project{
+	z-index: 100;
+}
+
+.overlay{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.6s;
+}
+
+.single-project.visible .overlay{
+	height: 100%;
+}
+
+.popup-detail{
+	box-sizing: border-box;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	margin-left: 0;
+	top: 0;
+	pointer-events: none;
+	opacity: 0;
+	transition: 0.4s;
+	text-align: left;
+}
+
+.single-project.visible .popup-detail{
+	opacity: 1;
+	transition: 1.4s;
+	pointer-events: auto;
+}
+
+.popup-detail h3{
+	margin-top: 45px;
+}
+
+.popup-detail figure{
+	height: 300px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 90%;
+	max-width: 800px;
+	margin-left: 5%;
+
+}
+
+.popup-detail p{
+	margin-left: 5%;
+	line-height: 1.4em;
+	font-size: 12px;
+	font-weight: 500;
+	text-shadow: none;
+	width: 90%;
+}
+
+.close{
+	position: absolute;
+	right: 5%;
+	top: 25px;
+	font-size: 80px;
+	color: #FFF;
+	cursor: pointer;
+	font-weight: 500;
+}
+
+.error {
+	opacity: 0;
+	transition: 0.6s;
+	pointer-events: none;
+	position: absolute;
+	left: 0;
+	top: 40px;
+	width: 100%;
+	z-index: 999;
+}
+
+.error.visible {
+	opacity: 1;
+	transition: 1.4s;
+	display: block;
+	width: 100%;
+	height: 100vh;
+	pointer-events: auto;
+}
+
+/*---------------------------
+Clearfix
+---------------------------*/
+
+.clearfix:before,
+.clearfix:after{
+	content: "";
+  	display: table;
+}
+
+.clearfix:after{
+	clear: both;
+}
+
+.clearfix{
+	clear: both;
+	*zoom: 1;
+}
+
+/*-------------------------
+Responsiveness
+-------------------------*/
+
+/*-------------------------
+Mobile
+-------------------------*/
+
+/*-------------------------
+Portrait
+-------------------------*/
+
+@media screen and (max-device-width: 500px) and (orientation: portrait){
+
+}
+
+/*-------------------------
+Landscape
+-------------------------*/
+@media screen and (max-device-width: 500px) and (orientation: landscape), screen and (max-device-height: 500px) and (orientation: landscape){
+	.sq {
+	width: 50vw;
+	height: 50vw;
+	}
+}
+
+/*-------------------------
+Everything but Mobile
+-------------------------*/
+
+@media screen and (min-width: 500px) and (min-device-width: 500px) {
+	.sq {
+	width: 50vw;
+	height: 50vw;
+	}
+
+	@keyframes slide1 {
+  		0% {
+    		left: 0;
+   	 		top: 0;
+  		}
+  		50% {
+    		left: 0;
+    		top: 50px;
+  		}
+  		100% {
+    		left: 0;
+    		top: 100px;
+  		}
+	}
+
+	@keyframes slide2 {
+  		0% {
+    		left: 0;
+    		top: 0;
+  		}
+  		50% {
+    		left: 50%;
+    		top: 0;
+  		}
+  		100% {
+    		left: 100%;
+    		top: 0;
+  		}
+	}
+
+}
+
+@media screen and (min-width: 780px) and (min-device-width: 500px) {
+	.sq {
+		width: 33.3333333vw;
+		height: 33.3333333vw;
+	}
+
+	.popup-detail p{
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 1050px) {
+	.popup-detail p{
+		width: 60%;
+	}
+}
+

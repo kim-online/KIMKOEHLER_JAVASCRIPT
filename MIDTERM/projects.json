@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "artificial waves",
+    "type": "INTERACTIVE ART INSTALLATION",
+    "color": "#06465b",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "image": {
+      "small": "assets/img/artificialwaves.jpg",
+      "large": "url('assets/img/artificialwaves.jpg')"
+    }
+  },
+  {
+    "id": 2,
+    "name": "artificial waves",
+    "type": "INTERACTIVE ART INSTALLATION",
+    "color": "#7ABCC7",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "image": {
+      "small": "assets/img/artificialwaves.jpg",
+      "large": "url('assets/img/artificialwaves.jpg')"
+    }
+  },
+  {
+    "id": 3,
+    "name": "artificial waves",
+    "type": "INTERACTIVE ART INSTALLATION",
+    "color": "#CED767",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "image": {
+      "small": "assets/img/artificialwaves.jpg",
+      "large": "url('assets/img/artificialwaves.jpg')"
+    }
+  },
+  {
+    "id": 4,
+    "name": "artificial waves",
+    "type": "INTERACTIVE ART INSTALLATION",
+    "color": "#F7ED94",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "image": {
+      "small": "assets/img/artificialwaves.jpg",
+      "large": "url('assets/img/artificialwaves.jpg')"
+    }
+  },
+  {
+    "id": 5,
+    "name": "artificial waves",
+    "type": "INTERACTIVE ART INSTALLATION",
+    "color": "#EB818D",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "image": {
+      "small": "assets/img/artificialwaves.jpg",
+      "large": "url('assets/img/artificialwaves.jpg')"
+    }
+  },
+  {
+    "id": 6,
+    "name": "artificial waves",
+    "type": "INTERACTIVE ART INSTALLATION",
+    "color": "#F4AA6C",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "image": {
+      "small": "assets/img/artificialwaves.jpg",
+      "large": "url('assets/img/artificialwaves.jpg')"
+    }
+  },
+  {
+    "id": 7,
+    "name": "artificial waves",
+    "type": "INTERACTIVE ART INSTALLATION",
+    "color": "#5ABBB4",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "image": {
+      "small": "assets/img/artificialwaves.jpg",
+      "large": "url('assets/img/artificialwaves.jpg')"
+    }
+  },
+  {
+    "id": 8,
+    "name": "artificial waves",
+    "type": "INTERACTIVE ART INSTALLATION",
+    "color": "#FFC7C9",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "image": {
+      "small": "assets/img/artificialwaves.jpg",
+      "large": "url('assets/img/artificialwaves.jpg')"
+    }
+  },
+  {
+    "id": 9,
+    "name": "artificial waves",
+    "type": "INTERACTIVE ART INSTALLATION",
+    "color": "#06465b",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
+    "image": {
+      "small": "assets/img/artificialwaves.jpg",
+      "large": "url('assets/img/artificialwaves.jpg')"
+    }
+  }
+]

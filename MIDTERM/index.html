@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Kim Kohler's portfolio.</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=yes, initial-scale=1, width=device-width">
+		<link rel="stylesheet" href="assets/css/normalize.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="shortcut icon" href="#" />
+
+	</head>
+	<body>
+		<div class="all-content type">
+			<div class="grid page">
+			<section class="clearfix">	
+				<ul class="squares">
+					<script id="projects-template" type="x-handlebars-template">​
+					{{#each this}}
+						<li data-index="{{id}}" class="sq sq{{id}}">
+							<h1>{{name}}<br/></h1>
+							<h2>{{type}}</h2>
+						</li>
+					{{/each}}
+				</script> 
+				</ul>
+			</section>
+			</div>
+			<div class="single-project page">
+			<div class="overlay"></div>
+			<div class="popup-detail">
+				
+				<h3>Single project view</h3>
+				<h4>Blurb placeholder</h4>
+				<figure></figure>
+				<p></p>
+				<span class="close">×</span>
+			</div>
+			</div>
+			<div class="error page">
+				<h3>Something went wrong and I'm not sure why.. :o</h3>
+			</div>
+		</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
