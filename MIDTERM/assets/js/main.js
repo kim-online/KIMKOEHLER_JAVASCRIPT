@@ -1,4 +1,8 @@
 
+/*This SPA page is based on the template find here, the same
+as Umi Syam used for the DT's Thesis show.
+http://tutorialzine.com/2015/02/single-page-app-without-a-framework/
+*/
 
 var app = app || {};
 
@@ -14,21 +18,6 @@ app.main = (function(){
 			window.location.hash = '#';
 		});
 		
-/*
-		$('li').on('click', function(event){
-			/*$('li').attr('firstClick', false);
-			$(this).attr('firstClick', true);
-			console.log('first click');
-			$('li').removeClass('active');
-			$(this).addClass('active');
-			/*if(this.is(":clicked")){
-  				$('active').on('click', function(event){
-  					$('.active a').click();
-  					$('li').removeClass('active');
-  					console.log('second click');
-  				});
-  			}
-		});*/
 
 	};
 
@@ -53,6 +42,8 @@ app.main = (function(){
 	function render(url) {
 
 		var temp = url.split('/')[0];
+
+		//Make sure all pages are hidden to start with.
 
 		$('.all-content .page').removeClass('visible');
 
@@ -103,18 +94,16 @@ app.main = (function(){
 	}
 
 	/*------------------------------------------------*/
-	// Iterate through the students object & Make the students page visible
+	// Iterate through the projects to make the clicked one visible
 	/*------------------------------------------------*/
 	function renderStudentsPage(data){
 
 		var page = $('.grid'),
 			allProjects = $('.squares > li');
 
-		// Hide all the students in the students list.
+		// Hide all the projects
 		allProjects.addClass('hidden');
 
-		// Iterate over all of the students.
-		// If their ID is somewhere in the data object remove the hidden class to reveal them.
 		allProjects.each(function () {
 
 			var that = $(this);
@@ -131,19 +120,15 @@ app.main = (function(){
 		page.addClass('visible');
 	}
 
-	/*------------------------------------------------*/
-	// Pop-up the project detail
-	/*------------------------------------------------*/
-	// Its parameters are an index from the hash and the students object.
 	function renderSingleProjectPage(index, data){
 		var page = $('.single-project'),
 			container = $('.popup-detail');
 
-		// Find the wanted product by iterating the data object and searching for the chosen index.
+		// Find the wanted project by iterating the data object and searching for the chosen index.
 		if(data.length){
 			data.forEach(function (item) {
 				if(item.id == index){
-					// Populate '.popup-detail' with the chosen product's data.
+					// Changing the page depending on which project is chosen.
 					container.css('background-color', item.color);
 					container.find('h3').text(item.name);
 					container.find('h4').text(item.type);
